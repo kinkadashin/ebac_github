@@ -6,9 +6,9 @@ $(document).ready(function() {
         const tarefa = $('#nome-tarefa').val();
         $(`<li class="tarefa">${tarefa}</li>`).appendTo('ul');
         $('#nome-tarefa').val('')
-        
-        $('li').click(function() {
-            $(this).addClass("finalizada")
-        })
     })
+
+    $('ul').on('click', 'li', function() {
+        $(this).toggleClass('finalizada');
+    });
 })
