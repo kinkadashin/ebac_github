@@ -8,6 +8,7 @@ $(document).ready(function() {
         rules: {
             nome: {
                 required: true,
+                minWords: 2
             },
             email: {
                 required: true,
