@@ -3,50 +3,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #FFF
 }
 
 body {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(233, 233, 233);
-}
-
-h1 {
-    margin-bottom: 30px;
-    font-size: 50px;
+    background-color: rgb(46, 46, 46);
 }
 
 form {
-    margin-bottom: 30px;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 6px;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.719);
 }
 
-form input, button {
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+form input {
+    width: 100%;
     padding: 8px;
-    font-size: 30px;
-    border-radius: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(34, 34, 34);
+    border: none;
+    border-bottom: 1px solid #00ff1541;
 }
 
-form button {
-    font-weight: 700;
-    background-color: rgb(233, 233, 233);
+form > div {
+    margin-bottom: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 16px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+    background-color: #00ff15;
     transition: all ease .4s;
 }
 
 button:hover {
-    background-color: rgb(196, 196, 196);
+    background-color: #03740c;
 }
 
-li {
-    font-size: 28px;
-    cursor: pointer;
-    margin-bottom: 8px;
-}
-
-.finalizada {
-    text-decoration: line-through;
-}
