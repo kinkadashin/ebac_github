@@ -2,23 +2,19 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JS</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>EBAC - Módulo 7</h1>
-        <h2>Exercício</h2>
-        <form id="form">
-            <input id="number1" type="number" required placeholder="Digite um número A" />
-            <p class="message-error"></p>
-            <input id="number2" type="number" required placeholder="Digite um número B" />
-            <button id="btn" type="submit">Enviar</button>
-        </form>
-        <p class="message-aprove"></p>
-    </div>
+    <h1>Lista de tarefas</h1>
+    <form>
+        <input id="nome-tarefa" type="text" required placeholder="Nome da tarefa">
+        <button type="submit">Cadastrar</button>
+    </form>
+    <ul>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
