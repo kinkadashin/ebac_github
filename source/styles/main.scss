@@ -1,0 +1,23 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$corPrincipal;
+    font-family: sans-serif;
+    h1 {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .images {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0 8px;
+        img {
+            width: 32%;
+            height: 400px;
+        }
+    }
+}
