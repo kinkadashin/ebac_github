@@ -1,37 +1,17 @@
-function Animal(nome, idade) {
-    this.nome = nome
-    this.idade = idade
+const alunos = [
+    { nome: 'Tulio', nota: 8 },
+    { nome: 'Lucas', nota: 5 },
+    { nome: 'Jennifer', nota: 7 },
+    { nome: 'Liminha', nota: 9 },
+    { nome: 'Rafael', nota: 4 },
+];
+
+function filtroAlunos(arrayAlunos) {
+    return arrayAlunos.filter(aluno => aluno.nota >= 6);
 }
 
-function Cachorro(nome, idade, raca) {
-    this.raca = raca
-    this.fazerBarulho = function() {
-        console.log("Au au!")
-    }
+const alunosAprovados = filtroAlunos(alunos);
 
-    Animal.call(this, nome, idade)
+for (i = 0; i < alunosAprovados.length; i++) {
+    console.log(`${alunosAprovados[i].nome} foi aprovado devido a média maior que 6.`)
 }
-
-function Gato(nome, idade, cor) {
-    this.cor = cor
-    this.fazerBarulho = function() {
-        console.log("Miau Miau!")
-    }
-    this.arranharMobilia = function() {
-        console.log("RAWR RAWR :3")
-    }
-
-    Animal.call(this, nome, idade)
-}
-
-const dogTulio = new Cachorro("Rex", 3, "Labrador")
-const catLucas = new Gato("Milli", 1, "Siamês")
-const catJennifer = new Gato("Romelson", 5, "Preto")
-
-
-dogTulio.fazerBarulho()
-console.log(dogTulio)
-catLucas.fazerBarulho()
-console.log(catLucas)
-catJennifer.arranharMobilia()
-console.log(catJennifer)
